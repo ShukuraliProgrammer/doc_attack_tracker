@@ -11,7 +11,7 @@ class DDOSMiddleware(MiddlewareMixin):
 
     def call(self, request):
         # So'rov jo'natish tezligini o'rnating (daqiqasiga so'rovlar soni)
-        rate_limit_threshold = 10
+        rate_limit_threshold = 100
 
         # So'rovning IP manzilini oling
         ip_address = request.META.get('REMOTE_ADDR')
