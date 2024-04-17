@@ -17,7 +17,7 @@ class DDOSMiddleware(MiddlewareMixin):
         ip_address = request.META.get('REMOTE_ADDR')
         print("ip address: ", ip_address)
         # IP-manzil qora ro'yxatga kiritilganligini tekshiring
-        ip_address_obj = BlackIps.objects.get(ip=ip_address, is_active=True)
+        ip_address_obj = BlackIps.objects.get(ip=ip_address, blocked=True)
         if ip_address_obj:
             return HttpResponseForbidden("IP manzilingiz shubhali faoliyat tufayli bloklandi.")
 
