@@ -27,7 +27,7 @@ class DDOSMiddleware(MiddlewareMixin):
         ip_address_obj.save(update_fields=['request_count'])
 
         # Tarif chegarasi chegarasidan oshib ketganligini tekshiring
-        if ip_address_obj.request_count > rate_limit_threshold:
+        if ip_address_obj.request_count > rate_limit_threshold and ip_address not in ADMIN_IPS:
             # IP-manzilni qora ro'yxatga qo'shing
             # IP address 5 soatga bloklangandi
             ip_address_obj.blocked = True

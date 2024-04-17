@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['shukuraliprogrammer.jprq.app', '127.0.0.1', 'shukurdev.uz', 'www.shukurdev.uz', '162.55.134.175']
 
-ADMIN_IPS = ['127.0.0.1', '162.55.134.175']
+ADMIN_IPS = ['127.0.0.1', '162.55.134.175', '185.213.229.142', '95.214.210.37']
 
 # Application definition
 
