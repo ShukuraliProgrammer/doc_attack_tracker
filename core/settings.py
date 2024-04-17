@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x#vi)0etflxasjf_d(6h&^-p2zsfp9$7*c4tiu=)5x_)d2qs*z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shukuraliprogrammer.jprq.app', '127.0.0.1', 'shukurdev.uz', 'www.shukurdev.uz']
+ALLOWED_HOSTS = ['shukuraliprogrammer.jprq.app', '127.0.0.1', 'shukurdev.uz', 'www.shukurdev.uz', '162.55.134.175']
 
 
 # Application definition
